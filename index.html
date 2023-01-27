@@ -23,15 +23,21 @@
 					<input type="text" name="units" id="units" required />
 					<label for="discount">Дисконт </label>
 					<div>
-						<input id="discount" type="checkbox" required id="discount" />
-						<input type="text" disabled required />
+						<input type="checkbox" required aria-label="Добавить скидку" />
+						<input
+							type="text"
+							disabled
+							required
+							name="discount"
+							id="discount"
+						/>
 					</div>
-					<label
-						>Описание
-						<textarea name="description" required></textarea>
-					</label>
-					<label>Колличество <input type="text" name="count" required /></label>
-					<label>Цена <input type="text" name="price" required /></label>
+					<label for="description">Описание </label>
+					<textarea name="description" required id="description"></textarea>
+					<label for="count">Колличество </label>
+					<input type="text" name="count" required id="count" />
+					<label for="price">Цена </label>
+					<input type="text" name="price" required id="price" />
 					<input
 						name="image"
 						type="file"
